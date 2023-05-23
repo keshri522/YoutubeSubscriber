@@ -72,6 +72,10 @@ body {
 .github:hover{
     transform: scale(1.2); 
 }
+.error{
+  color: red;
+  font-size: 40px;
+}
 
 /* this is the media query for the screen size of o to 768 px on that screen these classes will applied after that screen default will be applied.. */
   @media only screen and (max-width: 768px) { 
