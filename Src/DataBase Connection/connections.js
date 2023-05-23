@@ -7,14 +7,16 @@ dotenv.config()
 // Connecting the databse //
 //using async function to create a connetion
 const Connection=async()=>{ //i am creating a connection bewteeen databse using async await you can aslo use then and catch method
-    const DataBaseUri= process.env.Database_URI
+    
     try {
+        const DataBaseUri= process.env.Database_URI
        const Connect=  await mongoose.connect(DataBaseUri,{   UseNewUrlParser: true,
-        useUnifiedTopology: true,})
+        useUnifiedTopology: true})
         // note//
         // UseNewUrlParser:ture  //When this option is enabled, it tells the MongoDB driver to use the new URL parser when connecting to the MongoDB server.
         // useUnifiedTopology: true, when we use this we  are instructing the MongoDB driver to use the unified topology engine for managing connections to the MongoDB server. 
         console.log("DataBase Connected SucessFully")
+        return mongoose;
     } catch (error) {
         console.log(error) //if there is any error will come then it will show in the console..
     }
