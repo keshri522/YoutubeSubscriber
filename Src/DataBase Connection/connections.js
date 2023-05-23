@@ -7,7 +7,7 @@ dotenv.config()
 // Connecting the databse //
 //using async function to create a connetion
 const Connection=async()=>{ //i am creating a connection bewteeen databse using async await you can aslo use then and catch method
-    const DataBaseUri=process.env.Database_URI || "mongodb+srv://rkeshri522:Rahulkeshri123@cluster0.pmobmox.mongodb.net/subscribers?retryWrites=true&w=majority" //if anyone of this present then it will create a connection with the URI
+    const DataBaseUri= process.env.Database_URI
     try {
        const Connect=  await mongoose.connect(DataBaseUri,{   UseNewUrlParser: true,
         useUnifiedTopology: true,})
