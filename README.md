@@ -12,7 +12,7 @@ https://rahulyoutubesubscribers.onrender.com/
 - Adding three Api for getting all the Subscribers
 - 1 By getting Subscribers
 - 2 By getting by their Names
-- By Getting by their Id
+- 3 By Getting by their Id
 
 
 ## What I used.
