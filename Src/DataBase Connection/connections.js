@@ -24,10 +24,15 @@ const Connection=async()=>{ //i am creating a connection bewteeen databse using 
 
 //creating a function here to insert the my data into the databse....
 const refreshAll = async () => {
-    // await SubscriberModal.deleteMany({}) //first it will deelte all the data 
+    try {
+       // await SubscriberModal.deleteMany({}) //first it will deelte all the data 
     // console.log(connection)
     await SubscriberModal.insertMany(data) //then insert all the data 
-    // await mongoose.disconnect();
+    // await mongoose.disconnect(); 
+    } catch (error) {
+        console.log(error)
+    }
+    
 }
 
 
