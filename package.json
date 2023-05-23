@@ -1,0 +1,19 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "This is the Backend Capstone project for the Almabetter",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [
+    "express",
+    "node",
+    "mongodb",
+    "html"
+  ],
+  "author": "Rahul keshri",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.2.0"
+  }
+}

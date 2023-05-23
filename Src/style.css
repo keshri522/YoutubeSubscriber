@@ -1,0 +1,83 @@
+body {
+   background-color:slateblue;
+   
+    height: 97vh;
+  }
+  * {
+    margin: 0px;
+  }
+
+  hr {
+    color:silver;
+  }
+
+  .text {
+    text-align: center;
+    color:tan;
+    margin: 20px;
+  }
+
+  .container {
+    margin: 0px 100px;
+  }
+
+  li {
+    margin: 30px;
+    font-size: x-large;
+    line-height: 1.6;
+  }
+
+  .linkedin {
+    color: white;
+  }
+
+  .linkedin:hover {
+    color: blue;
+  }
+
+  .routes {
+    color:black;
+  
+    padding: 8px;
+    border-radius: 10px;
+
+  }
+
+  .routes:hover {
+ color: white;
+  text-decoration: underline;
+
+  }
+  .center{
+   
+    display: flex;
+    justify-content: center;
+  
+
+  }
+.icons{
+    font-size:30px;
+    transition: all 0.3s;
+    margin: 10px;
+}
+.icons:hover{
+    transform: scale(1.2);
+}
+.github{
+    font-size:30px;
+    transition: all 0.3s;
+    margin: 10px;
+    color: black;
+}
+.github:hover{
+    transform: scale(1.2); 
+}
+
+/* this is the media query for the screen size of o to 768 px on that screen these classes will applied after that screen default will be applied.. */
+  @media only screen and (max-width: 768px) { 
+    .container {
+      margin: 0px 10px;
+      width: 100%;
+    }
+
+  }
