@@ -76,10 +76,8 @@ app.get("/subscribers/:id",async(req,res)=>{
    
 
 })
-//this i the middle ware 
-app.use((req,res,next)=>{ //adding middle at the last of all the routes so that it will not before any of the routes get block all the previous so i add at the last if users enter the wrong route then at the this middle ware will excetued and thrown an error 
-    res.status(400).send({message:"Route not found please Check Your Route."})
-})
+
+
 
 
 const port=process.env.PORT || 3000 //if any of the port is available then it will created a connection 
