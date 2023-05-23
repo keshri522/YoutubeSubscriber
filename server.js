@@ -76,7 +76,9 @@ app.get("/subscribers/:id",async(req,res)=>{
    
 
 })
-
+app.use((req, res, next) => { //this is for when user enter the wrong routes the error i shown it is middleware which will act jut before the server send the response to clent that why i add this to last if i add to srtart then it will basically hold other api to executes
+    res.status(404).send({ message: "Route not found. Please check your route." });
+  });
 
 
 
