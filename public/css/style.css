@@ -18,7 +18,8 @@ body {
   }
 
   .container {
-    margin: 0px 100px;
+    margin: 0px 70px;
+    text-align: center;
   }
 
   li {
@@ -54,6 +55,9 @@ body {
     justify-content: center;
   
 
+  }
+  .align{
+    text-align: center;
   }
 .icons{
     font-size:30px;
