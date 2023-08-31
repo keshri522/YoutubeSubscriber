@@ -33,7 +33,9 @@ https://rahulyoutubesubscribers.onrender.com/
 - Also Added some Validation Whether Subscribers exits or not.
 
 
-
+Add /subscribers in URL : Provides an array of all subscribers in the database.
+Add /subscribers/names in URL : Provides an array of subscribers with only two fields name and subscribedChannel
+Add /subscribers/:id in URL: Provides the details of a subscriber with the given ID.
 
 
 
